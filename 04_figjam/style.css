@@ -1,0 +1,88 @@
+/* drie basisstijlregels om je te helpen */
+:root {
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+/* 1 rem = 10px 
+1.4 = 14px */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+aside {
+  background-color: #c8b8ff;
+  padding: 22px;
+  text-align: center;
+}
+
+/* hier komt jouw css */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  background-color: #699bf7;
+}
+
+nav {
+  background-color: white;
+}
+
+/* dit selecteerd de ul binnen het nav element*/
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+/* dit selecteerd de il, binnen de ul binnen het nav element*/
+nav ul li {
+  padding: 34px 34px 39px 34px;
+  /*pointer zorgt ervoor dat je een handje krijgt, klassiek voor links*/
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  background-color: black;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  padding: 62px 11vw;
+  row-gap: 36px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  width: 400px;
+}
+article h1 {
+  font-size: 2.1rem;
+}
+article h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+article section {
+  /* ruimte tussen de lijnen tekst*/
+  line-height: 25px;
+}
+article button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 16px 27px;
+  width: fit-content;
+  border-radius: 5px;
+}
+article button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}

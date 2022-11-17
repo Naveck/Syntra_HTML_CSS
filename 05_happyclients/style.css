@@ -1,0 +1,74 @@
+/* drie basisstijlregels om je te helpen */
+:root {
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* hier komt jouw css */
+
+nav {
+  background-color: #f38181;
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+}
+
+nav img {
+  max-width: 74px;
+  max-height: 79px;
+}
+
+nav ul {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+nav ul li {
+  padding: 32px 30px;
+}
+
+body {
+  background-image: url(berg.png);
+}
+
+main h1 {
+  display: flex;
+  justify-content: center;
+  padding: 110px 0 0 0;
+}
+
+main h2 {
+  display: flex;
+  justify-content: center;
+}
+section {
+    padding: 85px 400px 125px 400px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+article {
+  display: flex;
+  justify-content: space-between;
+}
+
+article img {
+  border-radius: 50%;
+  height: 110px;
+}
+
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+

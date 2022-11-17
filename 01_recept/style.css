@@ -1,0 +1,19 @@
+li:hover {
+    background-color: yellow;
+  }
+
+  body {background-color: coral;}
+
+  ul {background-color: grey;}
+
+  h1 {
+    border: 5px solid red;
+  }
+  
+  h2 {
+    border: 4px dotted blue;
+  }
+  
+  div {
+    border: double;
+  }
