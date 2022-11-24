@@ -1,0 +1,106 @@
+/* drie basisstijlregels om je te helpen */
+:root {
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* hier komt jouw css */
+
+nav {
+  align-items: center;
+  padding: 10px;
+  background-color: black;
+  width: 100%;
+}
+
+nav div {
+  height: 100%;
+  color: orange;
+  font-size: 3rem;
+}
+
+nav div::first-letter {
+  color: white;
+}
+
+nav,
+nav section {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav section {
+  gap: 3rem;
+  color: grey;
+}
+
+nav section ul {
+  display: flex;
+  gap: 3rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+body {
+  /** set the url of the image **/
+  background-image: url(xit-bg.png);
+  /** set image size to "cover, this will ensure the images always covers either the maximum amount of height of width (whatever it is reaching first) **/
+  background-size: 100%; /** alternatively set to 100% **/
+  /** to ensure we do not repeat the background image **/
+  background-repeat: no-repeat;
+  /** in case background image doesn't completely cover background, it can be good to set background color to the background color of the image **/
+  background-color: rgba(209, 209, 209, 0.644);
+  /* to set padding to the body left & right*/
+}
+
+footer {
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+footer div {
+  height: 100%;
+  color: black;
+}
+
+footer div h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 15px;
+  padding-top: 30px;
+}
+footer div p {
+  font-size: 1.5rem;
+  padding-bottom: 30px;
+}
+
+footer,
+footer section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer section {
+  gap: 3rem;
+  color: grey;
+  font-size: 4.5rem;
+}
+
+footer section ul {
+  display: flex;
+  text-transform: uppercase;
+  gap: 3rem;
+  font-weight: 500;
+}
